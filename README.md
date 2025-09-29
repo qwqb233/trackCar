@@ -1,10 +1,17 @@
+<!--
+ * @Author: qwqb233 qwqb.zhang@gmail.com
+ * @Date: 2025-09-29 20:10:26
+ * @LastEditors: qwqb233 qwqb.zhang@gmail.com
+ * @FilePath: \course design5\README.md
+ * @Description: 
+-->
 # 智能小车课程设计
 
 ## 项目简介
 本项目为智能小车控制系统，基于STM32平台，集成电机驱动、OLED显示、超声波测距、颜色识别、寻迹、按键控制等功能模块，实现自动循迹、避障、颜色识别触发等任务。
 
 ## 主要模块
-- **电机驱动与PID控制**：`motorLib`，支持四轮独立PID速度控制。
+- **电机驱动与PID控制**：`motorLib`，支持四轮独立PID速度控制，以实现通过运动学模型控制麦克纳姆轮底盘全向移动。
 - **OLED显示**：`iic`，显示欢迎界面、运行状态等信息。
 - **超声波测距**：`US_ranging`，用于障碍物检测与距离测量。
 - **颜色识别**：`colorRe`，通过TCS34725模块识别颜色，控制状态切换。
